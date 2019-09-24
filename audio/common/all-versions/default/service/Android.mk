@@ -49,10 +49,10 @@ LOCAL_SHARED_LIBRARIES := \
     libhwbinder \
     libcutils
 
-ifeq ($(ENABLE_SPLIT_A2DP),true)
-LOCAL_CFLAGS += -DENABLE_SPLIT_A2DP
-LOCAL_SHARED_LIBRARIES += com.qualcomm.qti.bluetooth_audio@1.0
-endif
+#ifeq ($(ENABLE_SPLIT_A2DP),true)
+#LOCAL_CFLAGS += -DENABLE_SPLIT_A2DP
+#LOCAL_SHARED_LIBRARIES += com.qualcomm.qti.bluetooth_audio@1.0
+#endif
 
 # Can not switch to Android.bp until AUDIOSERVER_MULTILIB
 # is deprecated as build config variable are not supported
